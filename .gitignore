@@ -1,6 +1,12 @@
 # IDE
 .idea
+out/
 
+# TeX
 *.log
 *.aux
-out/
+*.nav
+*.out
+*.snm
+*.gz
+*.toc

@@ -1,33 +1,29 @@
-\documentclass{article}
+\documentclass{beamer}
 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{geometry}
+\usepackage{tikz}
 
-\newgeometry{
-    top=4cm,
-    bottom=4cm,
-    outer=3cm,
-    inner=3cm,
-}
 
-\title{Linux für Anfänger}
+\usetheme[numbering=counter, progressbar=frametitle, block=fill]{metropolis}
+\graphicspath{ {res/} }
+
+\title{Linux: Grundkurs}
+\subtitle{Eine Einführung in den KDE-Desktop}
 \author{Paul Seidel}
-
+\date{\today} %may change
+\institute{ZKK - Universität Passau}
 
 \begin{document}
 
     \maketitle
 
-    \tableofcontents
-
     \include{chapter/introduction}
+    \include{chapter/test}
 
-    \section{Conclusion}
-
-    Das war gut!
-
-    \bibliographystyle{plain}
-    \bibliography{ref}
+    \begin{frame}[standout]
+        Danke
+    \end{frame}
 
 \end{document}

@@ -1,16 +1,20 @@
-# Linux Kurs
+# Linux Grundkurs
 
 Eine 6-7h Einführung in GNU/Linux mit KDE Plasma als Desktopumgebung.
 
 ## Install
 
 ```bash
-sudo apt-get install texlive-latex-base
+sudo apt install texlive-latex-recommended texlive-pictures
 ```
 
 ## Build Latex
 
 ```bash
 pdflatex linux-kurs.tex
-``` 
+```
 
+(*auch: TeX-Editor oder IDE-Plugin benutzen*)
+
+### Theme
+[Metropolis-Theme](https://github.com/matze/mtheme)

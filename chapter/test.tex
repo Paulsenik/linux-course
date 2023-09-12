@@ -1,0 +1,38 @@
+%! Author = paulsen
+%! Date = 12.09.23
+
+\begin{frame}
+    \frametitle{Test}
+
+    Quote:
+    \begin{quote}
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    \end{quote}
+
+    \begin{tikzpicture}
+        [remember picture,overlay,shift={(current page.north east)}]
+        \node[anchor=north east,xshift=-7cm,yshift=-2.5cm]{\includegraphics[width=2cm]{ISS}};
+        \node[anchor=north east,xshift=-5cm,yshift=-2.5cm]{\includegraphics[width=3cm]{ISS}};
+        \node[anchor=north east,xshift=-1cm,yshift=-2.5cm]{\includegraphics[width=5cm]{ISS}};
+    \end{tikzpicture}
+
+    \begin{itemize}
+        \item[!.] Eintrag
+        \begin{enumerate}
+            \item Test123
+            \item asdf
+        \end{enumerate}
+        \item Descriptions
+        \begin{description}
+            \item[Thema] Schilderung
+        \end{description}
+    \end{itemize}
+
+    \begin{exampleblock}{Beispiel 1}
+        Die ISS ist schön
+    \end{exampleblock}
+    \begin{alertblock}{Fun Fact}
+        Die ISS läuft mit Linux.
+    \end{alertblock}
+
+\end{frame}
