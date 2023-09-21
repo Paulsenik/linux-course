@@ -2,6 +2,8 @@
 
 Eine 6-7h Einführung in GNU/Linux mit KDE Plasma als Desktopumgebung.
 
+[Kurs PDF](out/linux-kurs.pdf)
+
 ## Install
 
 ```bash
