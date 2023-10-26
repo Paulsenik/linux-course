@@ -12,6 +12,9 @@ sudo apt install texlive-latex-recommended texlive-pictures
 
 ## Build Latex
 
+Add/Remove `handout`-value from `\documentclass[handout]` for rendering without animations.
+
+Simple Build:
 ```bash
 pdflatex linux-kurs.tex
 ```
