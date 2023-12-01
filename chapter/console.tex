@@ -10,10 +10,11 @@
     \begin{quote}
         Die Wurzel (/) ist der Ursprung aller Dinge in Linux.
     \end{quote}
+    \pause
 
     \begin{itemize}
-        \item Wurzel ist ähnlich zur "C:\textbackslash"-Festplatte in Windows
-        \item In "/home" leben alle Nutzer und ihre Daten
+        \item Wurzel ist ähnlich zur "C:\textbackslash"-Festplatte in Windows\pause
+        \item In "/home" leben alle Nutzer und ihre Daten\pause
         \item Dateisystem beginnt hier
     \end{itemize}
 
@@ -26,15 +27,16 @@
         Alles in Linux ist eine Datei!?
     \end{quote}
 
+
     \begin{itemize}
-        \item Konfigurationen (/etc)
-        \item Commands (/bin)
-        \item Geräte (/dev)
-        \item Speichermedien (/media /mnt)
+        \item<2-> Konfigurationen (/etc)
+        \item<3-> Commands (/bin)
+        \item<4-> Geräte (/dev)
+        \item<5-> Speichermedien (/media /mnt)
     \end{itemize}
 
     \vspace{0.5cm}
-    \begin{exampleblock}{Fun Fact}
+    \begin{exampleblock}{Fun Fact}<1->
         Dateien mit einem Punkt vor dem Namen (.bashrc .git) werden in der Standardansicht versteckt.
     \end{exampleblock}
 \end{frame}
@@ -43,16 +45,19 @@
     \subsection{Die Shell}\label{subsec:die-shell}
 
     Die Shell ermöglicht direkten Zugriff auf das Betriebssystem.
+    \pause
 
     \begin{itemize}
-        \item Das mächtigste Werkzeug in Linux
-        \item Navigation durch das Dateisystem
-        \item Ausführen von System-Befehlen
+        \item Das mächtigste Werkzeug in Linux\pause
+        \item Navigation durch das Dateisystem\pause
+        \item Ausführen von System-Befehlen\pause
         \item Anzeige von Informationen
     \end{itemize}
+    \pause
 
     \vspace{0.5cm}
     \includegraphics[width=3cm]{plasma-konsole}
+    \pause
 
     \vspace{0.5cm}
     \begin{alertblock}{Aufgabe}
@@ -64,18 +69,21 @@
 \begin{frame}{Befehle}
     \subsection{Befehle}\label{subsec:befehle}
 
-    Ein Befehl besteht aus bis zu drei Teilen
+    Ein Befehl besteht aus bis zu drei Teilen:
+    \pause
 
     \begin{enumerate}
-        \item Befehlsname
-        \item Optionen
+        \item Befehlsname\pause
+        \item Optionen\pause
         \item Argumente
     \end{enumerate}
+    \pause
 
     \vspace{0.5cm}
     \begin{exampleblock}{Beispiel}
         \$ ls -la /home/Nutzer/Dokumente
     \end{exampleblock}
+    \pause
 
     \vspace{0.5cm}
     \begin{alertblock}{Aufgabe}
@@ -88,19 +96,22 @@
     \subsection{Navigation}\label{subsec:navigation}
 
     Wie navigiere ich durch das Dateisystem?
+    \pause
 
     \textrightarrow "cd" wechselt den aktuellen Ordner
+    \pause
 
     \begin{itemize}
-        \item[\$] cd Ordnername
-        \item[\$] cd ..
+        \item[\$] cd Ordnername\pause
+        \item[\$] cd ..\pause
         \item[\$] cd
     \end{itemize}
+    \pause
 
     \vspace{0.5cm}
     \begin{alertblock}{Aufgabe}
         \begin{itemize}
-            \item Probiere die oben genannten Befehle aus.
+            \item Probiere die oben genannten Befehle aus.\pause
             \item Navigiere zum Ordner mit den Kurs-Dokumenten.
         \end{itemize}
     \end{alertblock}
@@ -110,22 +121,26 @@
 \begin{frame}{Befehlshilfe}
     \subsection{Befehlshilfe}\label{subsec:befehlshilfe}
 
-    Hilfe ich kenne diesen Befehl nicht!\pause
+    Hilfe ich kenne diesen Befehl nicht!
+    \pause
 
     \textrightarrow Zur Hilfe für unbekannte Befehle gibt es "man".
+    \pause
 
     \vspace{0.5cm}
     \begin{alertblock}{Aufgabe}
         Ausprobieren:
 
         \begin{itemize}
-            \item[\$] man man
-            \item[\$] man ls
+            \item[\$] man man\pause
+            \item[\$] man ls\pause
             \item[\$] man
         \end{itemize}
     \end{alertblock}
+    \pause
 
     Wie komme ich da jetzt raus?
+    \pause
 
     \textrightarrow Q drücken
 
@@ -135,17 +150,19 @@
     \subsection{Textbearbeitung}\label{subsec:textbearbeitung}
 
     "nano" ist ein CLI-Programm zum Bearbeiten und Erstellen von Dateien.
+    \pause
 
     \begin{itemize}
-        \item CTRL + X zum Beenden
-        \item CTRL + O zum Speichern
+        \item CTRL + X zum Beenden\pause
+        \item CTRL + O zum Speichern\pause
         \item CTRL + C zum Abbrechen des Speicherprozesses
     \end{itemize}
+    \pause
 
     \vspace{0.5cm}
     \begin{alertblock}{Aufgabe}
         \begin{itemize}
-            \item Erstelle eine Datei mit nano
+            \item Erstelle eine Datei mit nano\pause
             \item[\$] nano test.txt
         \end{itemize}
     \end{alertblock}
@@ -156,14 +173,16 @@
     \subsection{Dateien}\label{subsec:dateien}
 
     Umgang mit Dateien:
+    \pause
 
     \begin{itemize}
-        \item Bearbeiten: \$ nano datei.txt
-        \item Inhalt: \$ cat datei.txt
-        \item Entfernen: \$ rm datei.txt
-        \item Kopieren: \$ cp datei.txt neu.txt
+        \item Bearbeiten: \$ nano datei.txt\pause
+        \item Inhalt: \$ cat datei.txt\pause
+        \item Entfernen: \$ rm datei.txt\pause
+        \item Kopieren: \$ cp datei.txt neu.txt\pause
         \item Verschieben: \$ mv datei.txt neu.txt
     \end{itemize}
+    \pause
 
     \vspace{0.5cm}
     \begin{exampleblock}{Tipp}
@@ -177,14 +196,14 @@
 
     \begin{alertblock}{Aufgaben}
         \begin{enumerate}
-            \item Wie groß ist deine ".bashrc"-Datei?
-            \item Wann wurde die Datei zuletzt verändert?
-            \item Kopiere die Test-Datei in den Benutzerordner.
-            \item Benenne die Datei in "Ich-Kann-Bash" um.
+            \item Wie groß ist deine ".bashrc"-Datei?\pause
+            \item Wann wurde die Datei zuletzt verändert?\pause
+            \item Kopiere die Test-Datei in den Benutzerordner.\pause
+            \item Benenne die Datei in "Ich-Kann-Bash" um.\pause
             \item Entferne die alte Datei.
         \end{enumerate}
     \end{alertblock}
-
+    \pause
 
     \vspace{0.5cm}
     \begin{alertblock}{Extra}
@@ -197,14 +216,16 @@
     \subsection{APT}\label{subsec:apt}
 
     APT ist der wichtigste Paket-Manager auf Debian/Ubuntu Systemen.
+    \pause
 
     \textrightarrow Über shell steuerbar.
+    \pause
 
     \begin{itemize}
-        \item[\$] man apt
-        \item[\$] apt list  -- installed
-        \item[\$] apt update
-        \item[\$] apt install Programm
+        \item[\$] man apt\pause
+        \item[\$] apt list  -- installed\pause
+        \item[\$] apt update\pause
+        \item[\$] apt install Programm\pause
         \item[\$] apt remove Programm
     \end{itemize}
 
@@ -214,18 +235,21 @@
     \subsection{Sudo}\label{subsec:sudo}
 
     \begin{quote}
-        Wie sagen wir wenn wir höflich um Erlaubnis fragen?
+        Wie sagen wir, wenn wir höflich um Erlaubnis fragen?
     \end{quote}
+    \pause
 
     \textrightarrow Richtig! "sudo"
+    \pause
 
     \begin{itemize}
-        \item Superuser do!
-        \item Lässt Admin-Befehle zu
-        \item Zum Schutz des "normalen" Nutzers
-        \item Mit Passwort-Eingabe verbunden
+        \item Superuser do!\pause
+        \item Lässt Admin-Befehle zu\pause
+        \item Zum Schutz des "normalen" Nutzers\pause
+        \item Mit Passwort-Eingabe verbunden\pause
         \item Steht direkt vor dem eigentlichen Befehl
     \end{itemize}
+    \pause
 
     \vspace{0.5cm}
     \begin{exampleblock}{Beispiel}
@@ -240,8 +264,8 @@
     \begin{alertblock}{Aufgabe}
         Erledige diese Dinge mit der Shell:
         \begin{enumerate}
-            \item Installiere "pdfpc"
-            \item Entferne "Okular"
+            \item Installiere "pdfpc"\pause
+            \item Entferne "Okular"\pause
             \item Aktualisiere dein System
         \end{enumerate}
     \end{alertblock}
@@ -250,14 +274,16 @@
 \begin{frame}{CLI Programme}
     \subsection{CLI Programme}\label{subsec:cli-programme}
 
-    Präsentieren von PDFs von der Konsole aus:
-
-    \begin{itemize}
-        \item[\$] pdfpc präsentation.pdf
-        \item "TAB" zur Übersicht
-        \item "1,2,3,4" zum Modus wechseln
-        \item "CTRL + Q" zum Beenden
-    \end{itemize}
+    \begin{alertblock}{Aufgabe}
+        Präsentiere PDFs von der Konsole aus:
+        \begin{itemize}
+            \item[\$] pdfpc präsentation.pdf\pause
+            \item "TAB" zur Übersicht\pause
+            \item "1,2,3,4" zum Modus wechseln\pause
+            \item "CTRL + Q" zum Beenden
+        \end{itemize}
+    \end{alertblock}
+    \pause
 
     Weitere CLI-Programme: nano, vim, man, htop ...
 
