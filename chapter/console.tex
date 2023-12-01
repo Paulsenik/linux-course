@@ -33,6 +33,10 @@
         \item Speichermedien (/media /mnt)
     \end{itemize}
 
+    \vspace{0.5cm}
+    \begin{exampleblock}{Fun Fact}
+        Dateien mit einem Punkt vor dem Namen (.bashrc .git) werden in der Standardansicht versteckt.
+    \end{exampleblock}
 \end{frame}
 
 \begin{frame}{Die Shell}
@@ -168,14 +172,23 @@
 
 \end{frame}
 
+\begin{frame}{Dateien - Übung}
+    \subsubsection{Übung}\label{subsubsec:übung}
 
-\begin{frame}{Dateien}
-
-    \begin{alertblock}{Aufgabe}
+    \begin{alertblock}{Aufgaben}
         \begin{enumerate}
-            \item TODO
-            \item TODO 2
+            \item Wie groß ist deine ".bashrc"-Datei?
+            \item Wann wurde die Datei zuletzt verändert?
+            \item Kopiere die Test-Datei in den Benutzerordner.
+            \item Benenne die Datei in "Ich-Kann-Bash" um.
+            \item Entferne die alte Datei.
         \end{enumerate}
+    \end{alertblock}
+
+
+    \vspace{0.5cm}
+    \begin{alertblock}{Extra}
+        Informiere dich mithilfe von "man apt" über den APT-Befehl
     \end{alertblock}
 
 \end{frame}
@@ -185,6 +198,67 @@
 
     APT ist der wichtigste Paket-Manager auf Debian/Ubuntu Systemen.
 
+    \textrightarrow Über shell steuerbar.
 
+    \begin{itemize}
+        \item[\$] man apt
+        \item[\$] apt list  -- installed
+        \item[\$] apt update
+        \item[\$] apt install Programm
+        \item[\$] apt remove Programm
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Sudo}
+    \subsection{Sudo}\label{subsec:sudo}
+
+    \begin{quote}
+        Wie sagen wir wenn wir höflich um Erlaubnis fragen?
+    \end{quote}
+
+    \textrightarrow Richtig! "sudo"
+
+    \begin{itemize}
+        \item Superuser do!
+        \item Lässt Admin-Befehle zu
+        \item Zum Schutz des "normalen" Nutzers
+        \item Mit Passwort-Eingabe verbunden
+        \item Steht direkt vor dem eigentlichen Befehl
+    \end{itemize}
+
+    \vspace{0.5cm}
+    \begin{exampleblock}{Beispiel}
+        \begin{itemize}
+            \item[\$] sudo apt install firefox
+        \end{itemize}
+    \end{exampleblock}
+
+\end{frame}
+
+\begin{frame}{Sudo}
+    \begin{alertblock}{Aufgabe}
+        Erledige diese Dinge mit der Shell:
+        \begin{enumerate}
+            \item Installiere "pdfpc"
+            \item Entferne "Okular"
+            \item Aktualisiere dein System
+        \end{enumerate}
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{CLI Programme}
+    \subsection{CLI Programme}\label{subsec:cli-programme}
+
+    Präsentieren von PDFs von der Konsole aus:
+
+    \begin{itemize}
+        \item[\$] pdfpc präsentation.pdf
+        \item "TAB" zur Übersicht
+        \item "1,2,3,4" zum Modus wechseln
+        \item "CTRL + Q" zum Beenden
+    \end{itemize}
+
+    Weitere CLI-Programme: nano, vim, man, ...
 
 \end{frame}
