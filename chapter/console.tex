@@ -3,18 +3,188 @@
 
 \begin{frame}{Die Konsole}
     \section{Die Konsole}\label{sec:die-konsole}
+\end{frame}
 
-    TODO
+\begin{frame}{Die "Wurzel"}
 
+    \begin{quote}
+        Die Wurzel (/) ist der Ursprung aller Dinge in Linux.
+    \end{quote}
+
+    \begin{itemize}
+        \item Wurzel ist ähnlich zur "C:\textbackslash"-Festplatte in Windows
+        \item In "/home" leben alle Nutzer und ihre Daten
+        \item Dateisystem beginnt hier
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Das Dateisystem}
+    \subsection{Dateisystem}\label{subsec:dateisystem}
+
+    \begin{quote}
+        Alles in Linux ist eine Datei!?
+    \end{quote}
+
+    \begin{itemize}
+        \item Konfigurationen (/etc)
+        \item Commands (/bin)
+        \item Geräte (/dev)
+        \item Speichermedien (/media /mnt)
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Die Shell}
+    \subsection{Die Shell}\label{subsec:die-shell}
+
+    Die Shell ermöglicht direkten Zugriff auf das Betriebssystem.
+
+    \begin{itemize}
+        \item Das mächtigste Werkzeug in Linux
+        \item Navigation durch das Dateisystem
+        \item Ausführen von System-Befehlen
+        \item Anzeige von Informationen
+    \end{itemize}
+
+    \vspace{0.5cm}
+    \includegraphics[width=3cm]{plasma-konsole}
+
+    \vspace{0.5cm}
+    \begin{alertblock}{Aufgabe}
+        Öffnet die Konsole und führt "whoami" aus.
+    \end{alertblock}
+
+\end{frame}
+
+\begin{frame}{Befehle}
+    \subsection{Befehle}\label{subsec:befehle}
+
+    Ein Befehl besteht aus bis zu drei Teilen
+
+    \begin{enumerate}
+        \item Befehlsname
+        \item Optionen
+        \item Argumente
+    \end{enumerate}
+
+    \vspace{0.5cm}
+    \begin{exampleblock}{Beispiel}
+        \$ ls -la /home/Nutzer/Dokumente
+    \end{exampleblock}
+
+    \vspace{0.5cm}
+    \begin{alertblock}{Aufgabe}
+        Probiert diesen Befehl an eurem Rechner mit und ohne den Optionen bzw Argumenten aus.
+    \end{alertblock}
+
+\end{frame}
+
+\begin{frame}{Navigation}
+    \subsection{Navigation}\label{subsec:navigation}
+
+    Wie navigiere ich durch das Dateisystem?
+
+    \textrightarrow "cd" wechselt den aktuellen Ordner
+
+    \begin{itemize}
+        \item[\$] cd Ordnername
+        \item[\$] cd ..
+        \item[\$] cd
+    \end{itemize}
+
+    \vspace{0.5cm}
+    \begin{alertblock}{Aufgabe}
+        \begin{itemize}
+            \item Probiert die oben genannten Befehle aus.
+            \item Navigiert zum Ordner mit den Kurs-Dokumenten.
+        \end{itemize}
+    \end{alertblock}
+
+\end{frame}
+
+\begin{frame}{Befehlshilfe}
+    \subsection{Befehlshilfe}\label{subsec:befehlshilfe}
+
+    Hilfe ich kenne diesen Befehl nicht!\pause
+
+    \textrightarrow Zur Hilfe für unbekannte Befehle gibt es "man".
+
+    \vspace{0.5cm}
+    \begin{alertblock}{Aufgabe}
+        Ausprobieren:
+
+        \begin{itemize}
+            \item[\$] man man
+            \item[\$] man ls
+            \item[\$] man
+        \end{itemize}
+    \end{alertblock}
+
+    Wie komme ich da jetzt raus?
+
+    \textrightarrow Q drücken
+
+\end{frame}
+
+\begin{frame}{Textbearbeitung}
+    \subsection{Textbearbeitung}\label{subsec:textbearbeitung}
+
+    "nano" ist ein CLI-Programm zum Bearbeiten und Erstellen von Dateien.
+
+    \begin{itemize}
+        \item CTRL + X zum Beenden
+        \item CTRL + O zum Speichern
+        \item CTRL + C zum Abbrechen des Speicherprozesses
+    \end{itemize}
+
+    \vspace{0.5cm}
+    \begin{alertblock}{Aufgabe}
+        \begin{itemize}
+            \item Erstellt eine Datei mit nano
+            \item[\$] nano test.txt
+        \end{itemize}
+    \end{alertblock}
+
+\end{frame}
+
+\begin{frame}{Dateien}
+    \subsection{Dateien}\label{subsec:dateien}
+
+    Umgang mit Dateien:
+
+    \begin{itemize}
+        \item Bearbeiten: \$ nano datei.txt
+        \item Inhalt: \$ cat datei.txt
+        \item Entfernen: \$ rm datei.txt
+        \item Kopieren: \$ cp datei.txt neu.txt
+        \item Verschieben: \$ mv datei.txt neu.txt
+    \end{itemize}
+
+    \vspace{0.5cm}
+    \begin{exampleblock}{Tipp}
+        Der "man"-Befehl kann beim Verständnis helfen.
+    \end{exampleblock}
 
 \end{frame}
 
 
-\begin{frame}{Die Konsole}
+\begin{frame}{Dateien}
 
-    \vspace{0.5cm}
     \begin{alertblock}{Aufgabe}
-        FlatPak einrichten
+        \begin{enumerate}
+            \item TODO
+            \item TODO 2
+        \end{enumerate}
     \end{alertblock}
+
+\end{frame}
+
+\begin{frame}{APT}
+    \subsection{APT}\label{subsec:apt}
+
+    APT ist der wichtigste Paket-Manager auf Debian/Ubuntu Systemen.
+
+
 
 \end{frame}
