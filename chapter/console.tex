@@ -8,12 +8,12 @@
 \begin{frame}{Die "Wurzel"}
 
     \begin{quote}
-        Die Wurzel (/) ist der Ursprung aller Dinge in Linux.
+        Die Wurzel (/), auch "root" genannt, ist der Ursprung des Dateisystems.
     \end{quote}
     \pause
 
     \begin{itemize}
-        \item Wurzel ist ähnlich zur "C:\textbackslash"-Festplatte in Windows\pause
+        \item Die Wurzel ist ähnlich zum "C:\textbackslash"-Pfad in Windows\pause
         \item In "/home" leben alle Nutzer und ihre Daten\pause
         \item Dateisystem beginnt hier
     \end{itemize}
@@ -37,7 +37,7 @@
 
     \vspace{0.5cm}
     \begin{exampleblock}{Fun Fact}<1->
-        Dateien mit einem Punkt vor dem Namen (.bashrc .git) werden in der Standardansicht versteckt.
+        Dateien mit Punkt am Anfang (.bashrc .git) werden im Explorer standardmäßig versteckt.
     \end{exampleblock}
 \end{frame}
 
@@ -110,11 +110,17 @@
 
     \vspace{0.5cm}
     \begin{alertblock}{Aufgabe}
-        \begin{itemize}
-            \item Probiere die oben genannten Befehle aus.\pause
-            \item Navigiere zum Ordner mit den Kurs-Dokumenten.
-        \end{itemize}
+        Navigiere zum Ordner mit den Kurs-Dokumenten.
     \end{alertblock}
+    \pause
+
+    Platzhalter bei Befehlen:
+
+    \begin{itemize}
+        \item \textasciitilde\space für das Nutzer-Verzeichnis\pause
+        \item . für den aktuellen Ordner\pause
+        \item .. für den Überordner
+    \end{itemize}
 
 \end{frame}
 
@@ -225,6 +231,7 @@
         \item[\$] man apt\pause
         \item[\$] apt list  -- installed\pause
         \item[\$] apt update\pause
+        \item[\$] apt upgrade\pause
         \item[\$] apt install Programm\pause
         \item[\$] apt remove Programm
     \end{itemize}
