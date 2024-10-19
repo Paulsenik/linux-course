@@ -2,18 +2,11 @@
 %! Date = 12.09.23
 
 \begin{frame}{Die Konsole}
-    \begin{center}
-        \includegraphics[height=3cm]{ISS}
-    \end{center}
-
-
     \section{Die Konsole}\label{sec:die-konsole}
-    \begin{exampleblock}{Fun Fact}
-        \href{https://www.extremetech.com/extreme/155392-international-space-station-switches-from-windows-to-linux-for-improved-reliability}{Die ISS läuft seit 2013 auf Linux.}
-    \end{exampleblock}
 \end{frame}
 
 \begin{frame}{Die "Wurzel"}
+    \pause
 
     \begin{quote}
         Die Wurzel (/), auch "root" genannt, ist der Ursprung des Dateisystems.
@@ -31,16 +24,16 @@
 \begin{frame}{Das Dateisystem}
     \subsection{Dateisystem}\label{subsec:dateisystem}
 
-    \begin{quote}
+    \begin{quote}<2->
         Alles in Linux ist eine Datei!?
     \end{quote}
 
 
     \begin{itemize}
-        \item<2-> Konfigurationen (/etc)
-        \item<3-> Commands (/bin)
-        \item<4-> Geräte (/dev)
-        \item<5-> Speichermedien (/media /mnt)
+        \item<3-> Konfigurationen (/etc)
+        \item<4-> Commands (/bin)
+        \item<5-> Geräte (/dev)
+        \item<6-> Speichermedien (/media /mnt)
     \end{itemize}
 
     \vspace{0.5cm}
@@ -51,7 +44,7 @@
 
 \begin{frame}{Die Shell}
     \subsection{Die Shell}\label{subsec:die-shell}
-
+    \pause
     Die Shell ermöglicht direkten Zugriff auf das Betriebssystem.
     \pause
 
@@ -76,13 +69,13 @@
 
 \begin{frame}{Befehle}
     \subsection{Befehle}\label{subsec:befehle}
-
-    Ein Befehl besteht aus bis zu drei Teilen:
+    \pause
+    Ein Befehl besteht (in der Regel) aus drei, durch leerzeichen getrennte, Teile:
     \pause
 
     \begin{enumerate}
         \item Befehlsname\pause
-        \item Optionen\pause
+        \item Optionen (Nicht immer notwendig)\pause
         \item Argumente
     \end{enumerate}
     \pause
@@ -102,7 +95,7 @@
 
 \begin{frame}{Navigation}
     \subsection{Navigation}\label{subsec:navigation}
-
+    \pause
     Wie navigiere ich durch das Dateisystem?
     \pause
 
@@ -118,7 +111,7 @@
 
     \vspace{0.5cm}
     \begin{alertblock}{Aufgabe}
-        Navigiere zum Ordner mit den Kurs-Dokumenten.
+        Navigiere zum Ordner "/home/\$USER/Downloads"
     \end{alertblock}
     \pause
 
@@ -135,7 +128,10 @@
 \begin{frame}{Befehlshilfe}
     \subsection{Befehlshilfe}\label{subsec:befehlshilfe}
 
-    Hilfe ich kenne diesen Befehl nicht!
+    \pause
+    \begin{quote}
+        Hilfe ich kenne diesen Befehl nicht!
+    \end{quote}
     \pause
 
     \textrightarrow Zur Hilfe für unbekannte Befehle gibt es "man".
@@ -143,8 +139,9 @@
 
     \vspace{0.5cm}
     \begin{alertblock}{Aufgabe}
+        \pause
         Ausprobieren:
-
+        \pause
         \begin{itemize}
             \item[\$] man man\pause
             \item[\$] man ls\pause
@@ -162,7 +159,7 @@
 
 \begin{frame}{Textbearbeitung}
     \subsection{Textbearbeitung}\label{subsec:textbearbeitung}
-
+    \pause
     "nano" ist ein CLI-Programm zum Bearbeiten und Erstellen von Dateien.
     \pause
 
@@ -175,7 +172,7 @@
 
     \vspace{0.5cm}
     \begin{alertblock}{Aufgabe}
-        \begin{itemize}
+        \begin{itemize}\pause
             \item Erstelle eine Datei mit nano\pause
             \item[\$] nano test.txt
         \end{itemize}
@@ -185,7 +182,7 @@
 
 \begin{frame}{Dateien}
     \subsection{Dateien}\label{subsec:dateien}
-
+    \pause
     Umgang mit Dateien:
     \pause
 
@@ -209,7 +206,7 @@
     \subsubsection{Übung}\label{subsubsec:übung}
 
     \begin{alertblock}{Aufgaben}
-        \begin{enumerate}
+        \begin{enumerate}\pause
             \item Kannst du die Datei ".bashrc" finden?\pause
             \item Wann wurde die Datei zuletzt verändert?\pause
             \item Kopiere die Test-Datei in den Benutzerordner.\pause
@@ -228,11 +225,11 @@
 
 \begin{frame}{APT}
     \subsection{APT}\label{subsec:apt}
-
+    \pause
     APT ist der wichtigste Paket-Manager auf Debian/Ubuntu Systemen.
     \pause
 
-    \textrightarrow Über shell steuerbar.
+    \textrightarrow Über Shell steuerbar.
     \pause
 
     \begin{itemize}
@@ -248,7 +245,7 @@
 
 \begin{frame}{Sudo}
     \subsection{Sudo}\label{subsec:sudo}
-
+    \pause
     \begin{quote}
         Wie sagen wir, wenn wir höflich um Erlaubnis fragen?
     \end{quote}
@@ -277,11 +274,11 @@
 
 \begin{frame}{Sudo}
     \begin{alertblock}{Aufgabe}
-        Erledige diese Dinge mit der Shell:
+        \uncover<2->{Erledige diese Dinge mit der Shell:}
         \begin{enumerate}
-            \item<2-> Installiere "pdfpc"
-            \item<3-> Entferne "okular"
-            \item<4-> Aktualisiere dein System
+            \item<3-> Installiere "pdfpc"
+            \item<4-> Entferne "okular"
+            \item<5-> Aktualisiere dein System
         \end{enumerate}
     \end{alertblock}
 
@@ -295,7 +292,8 @@
     \subsection{CLI Programme}\label{subsec:cli-programme}
 
     \begin{alertblock}{Aufgabe}
-        Präsentiere PDFs von der Konsole aus:
+        \pause
+        Präsentiere PDFs von der Konsole aus:\pause
         \begin{itemize}
             \item[\$] pdfpc präsentation.pdf\pause
             \item "TAB" zur Übersicht\pause
@@ -305,6 +303,6 @@
     \end{alertblock}
     \pause
 
-    Weitere CLI-Programme: nano, vim, man, htop ...
+    Weitere CLI-Programme: nano, vim, man, htop \ldots
 
 \end{frame}
