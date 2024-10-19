@@ -1,6 +1,6 @@
 # Linux Grundkurs
 
-Eine 6-7h Einführung in GNU/Linux mit KDE Plasma als Desktopumgebung.
+Eine 6-7h lange & grobe Einführung in GNU/Linux mit KDE Plasma als Desktopumgebung.
 
 [Kurs PDF](out/linux-kurs.pdf)
 
